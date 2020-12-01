@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: dodgerblue;
+  font-size: 2em;
+}
+
+p::first-letter{
+  font-size: 3em;
+  color: red;
+}
