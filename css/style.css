@@ -3,20 +3,28 @@ body {
 }
 
 p {
-  color:#9DBCD4;
   font-size: 2em;
+  border: 2px solid black;
 }
 
-p::first-letter{
-  font-size: 3em;
-  color: yellow;
+p::before {
+  color: red;
+  background-color: green;
+  content: "<<<<<";
 }
 
-p::first-line{
-  background-color: red;
+p::after {
+  content: ">>>>>";
+
+  color: brown;
+  background-color: green;
 }
 
-p::selection{
-  background-color: yellow;
-  color: black;
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: url("../icons/all-inclusive.svg");
+  vertical-align: sub;
 }
