@@ -3,11 +3,10 @@ body {
 }
 
 p {
-  color: dodgerblue;
+  color:#9DBCD4;
   font-size: 2em;
 }
 
-p::first-letter{
-  font-size: 3em;
-  color: red;
+p::first-line{
+ background-color:#6D5ACF; 
 }
