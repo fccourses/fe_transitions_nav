@@ -4,7 +4,7 @@ body {
 }
 
 .page-header {
-  padding: 10px 20px;
+  padding: 1.2em 1.8em;
   border-bottom: 1px solid black;
 
   position: fixed;
@@ -13,18 +13,77 @@ body {
   top: 0;
   z-index: 10;
 
-  box-shadow: 0px -32px 85px 0px rgba(0,0,0,0.66);
+  box-shadow: 0px -32px 85px 0px rgba(0, 0, 0, 0.66);
   background-color: white;
+}
+
+.list {
+  font-size: 0;
 }
 
 .list-item {
   display: inline-block;
+  font-size: 16px;
+}
+
+.list-item + .list-item {
+  margin-left: 1.2em;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid black;
+
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.link:hover,
+.link:focus {
+  outline: 0;
+  background-color: teal;
+  color: white;
+  box-shadow: 0px 0px 28px -8px rgba(0, 0, 0, 0.75);
+}
+
+.link:active {
+  box-shadow: inset 0px 0px 28px -8px rgba(0, 0, 0, 0.75);
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
-p{
+p {
   text-shadow: -4px -2px 11px rgba(150, 150, 150, 0.9);
+}
+
+.inner {
+  height: 80px;
+  background-color: black;
+  color: white;
+  width: 15%;
+  text-align: center;
+  font-size: 2em;
+
+  transition: width linear 1s;
+}
+
+.ease {
+  transition-timing-function: ease;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.container:hover .inner {
+  width: 100%;
 }
