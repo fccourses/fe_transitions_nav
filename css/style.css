@@ -1,57 +1,30 @@
 body {
   font-family: sans-serif;
+  min-height: 300vh;
 }
 
-p {
-  font-size: 2em;
-  border: 2px solid black;
+.page-header {
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+  box-shadow: 0px -32px 85px 0px rgba(0,0,0,0.66);
+  background-color: white;
 }
 
-p::before {
-  color: red;
-  background-color: green;
-  content: "<<<<<";
+.list-item {
+  display: inline-block;
 }
 
-p::after {
-  content: ">>>>>";
-
-  color: brown;
-  background-color: green;
+main {
+  margin-top: 80px;
 }
 
-ul {
-  list-style: none;
-}
-
-li {
-  margin: 0 auto;
-  margin-bottom: 30px;
-
-  position: relative;
-
-  text-align: center;
-  color: white;
-  background-color: teal;
-  width: 80%;
-}
-
-li::before,
-li::after {
-  position: absolute;
-
-  color: black;
-  font-size: 2em;
-}
-
-li::before {
-  content: open-quote;
-  right: 100%;
-  top: -0.5em;
-}
-
-li::after {
-  content: close-quote;
-  left: 100%;
-  bottom: -1em;
+p{
+  text-shadow: -4px -2px 11px rgba(150, 150, 150, 0.9);
 }
