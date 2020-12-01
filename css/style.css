@@ -24,7 +24,34 @@ ul {
   list-style: none;
 }
 
+li {
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  position: relative;
+
+  text-align: center;
+  color: white;
+  background-color: teal;
+  width: 80%;
+}
+
+li::before,
+li::after {
+  position: absolute;
+
+  color: black;
+  font-size: 2em;
+}
+
 li::before {
-  content: url("../icons/all-inclusive.svg");
-  vertical-align: sub;
+  content: open-quote;
+  right: 100%;
+  top: -0.5em;
+}
+
+li::after {
+  content: close-quote;
+  left: 100%;
+  bottom: -1em;
 }
