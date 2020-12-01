@@ -5,8 +5,15 @@ body {
 p {
   color:#9DBCD4;
   font-size: 2em;
+}
 
-  cursor: zoom-in;
+p::first-letter{
+  font-size: 3em;
+  color: yellow;
+}
+
+p::first-line{
+  background-color: red;
 }
 
 p::selection{
